@@ -54,9 +54,9 @@ docker-compose exec backend python manage.py shell < scripts/seed.py
 
 | Rôle    | Email                    | Mot de passe  |
 |---------|--------------------------|---------------|
-| Admin   | admin@hazemcoiff.tn      | Admin1234!    |
-| Coiffeur| aziz@hazemcoiff.tn       | Barber1234!   |
-| Client  | client1@demo.tn          | Client1234!   |
+| Admin   | admin@hazemcoiff.tn      | Demo1234!     |
+| Coiffeur| aziz@hazemcoiff.tn       | Demo1234!     |
+| Client  | client@demo.tn           | Demo1234!     |
 
 ---
 
@@ -95,7 +95,7 @@ Vérifier manuellement chaque point avant de passer à la démo propriétaire :
 
 - [ ] `docker-compose up --build` réussit depuis un clone propre
 - [ ] http://localhost charge le formulaire de connexion
-- [ ] Connexion en tant que client (client1@demo.tn) redirige vers `/`
+- [ ] Connexion en tant que client (client@demo.tn) redirige vers `/`
 - [ ] Connexion en tant que coiffeur (aziz@hazemcoiff.tn) redirige vers `/employee/dashboard`
 - [ ] Connexion en tant qu'admin (admin@hazemcoiff.tn) redirige vers `/admin/dashboard`
 - [ ] Client : réserver un RDV de bout en bout (service → coiffeur → créneau → confirmation)
