@@ -62,7 +62,11 @@ class ServiceWriteSerializer(serializers.ModelSerializer):
             "category",
             "price",
             "duration_minutes",
+            "is_active",
         )
+        extra_kwargs = {
+            "is_active": {"required": False},
+        }
 
     def validate_price(self, value):
         if value <= 0:
